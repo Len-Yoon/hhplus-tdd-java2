@@ -52,4 +52,3 @@ userId, list<pointhistory>, list.size(), pageable(시간 나면 추가)
 4. 포인트 내역 조회
 - ‭id 조회
 
-- 

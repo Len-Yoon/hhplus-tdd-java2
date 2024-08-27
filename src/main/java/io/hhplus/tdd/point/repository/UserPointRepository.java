@@ -1,11 +1,14 @@
 package io.hhplus.tdd.point.repository;
 
 import io.hhplus.tdd.point.UserPoint;
+import org.springframework.stereotype.Repository;
 
-public interface UserPointReposirtory {
-    public UserPoint findById(long id);
+import java.util.Optional;
 
-    public UserPoint save(UserPoint userPoint);
+public interface UserPointRepository {
+    public Optional<UserPoint> findById(long id);
+
+    public Optional<UserPoint> save(UserPoint userPoint);
 
     public UserPoint update(long userId, long amount);
 }
